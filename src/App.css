@@ -1,0 +1,150 @@
+  body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f0f4f8;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            transition: background-color 0.5s ease;         }
+
+        .container {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            width: 80%;
+            max-width: 800px;
+            margin-top: 20px;
+            opacity: 0; 
+            animation: fadeIn 0.5s forwards 0.2s; 
+            transition: box-shadow 0.3s ease; 
+        }
+
+        .container:hover {
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15); 
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        h1 {
+            color: #2c3e50;
+            text-align: center;
+            margin-bottom: 20px;
+            transition: color 0.3s ease; 
+        }
+
+        h1:hover {
+            color: #3498db; 
+        }
+
+        form {
+            margin-bottom: 20px;
+        }
+
+        form label {
+            display: block;
+            margin-top: 10px;
+            font-weight: 600;
+            color: #34495e;
+            transition: color 0.3s ease; 
+        }
+
+        form label:hover {
+            color: #2c3e50; 
+        }
+
+        form input {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #bdc3c7;
+            border-radius: 5px;
+            box-sizing: border-box;
+            font-family: 'Inter', sans-serif;
+            transition: border-color 0.3s ease, box-shadow 0.3s ease; 
+        }
+
+        form input:focus {
+            outline: none;
+            border-color: #3498db;
+            box-shadow: 0 0 5px rgba(52, 152, 219, 0.5); 
+        }
+
+        form button {
+            background-color: #3498db;
+            color: white;
+            padding: 10px 20px;
+            margin-top: 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s ease, transform 0.2s ease; 
+            font-family: 'Inter', sans-serif;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+        }
+
+        form button:hover {
+            background-color: #217dbb;
+            transform: translateY(-2px); 
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
+        }
+
+        form button:active {
+            transform: translateY(0); 
+            box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1); 
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+            transition: box-shadow 0.3s ease; 
+        }
+
+        table:hover {
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+        }
+
+        table th, table td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid #bdc3c7;
+            transition: background-color 0.3s ease, color 0.3s ease; 
+        }
+
+        table th {
+            background-color: #3498db;
+            color: white;
+            font-weight: 600;
+        }
+
+        table th:hover {
+            background-color: #217dbb;
+        }
+
+        table tbody tr:hover {
+            background-color: #e0e0e0;
+            color: #2c3e50; 
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                width: 95%;
+            }
+            table {
+                display: block;
+                overflow-x: auto;
+            }
+            form input {
+                width: 100%;
+            }
+        }
